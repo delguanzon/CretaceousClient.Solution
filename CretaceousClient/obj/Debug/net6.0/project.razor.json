@@ -16298,6 +16298,11 @@
   "RootNamespace": "CretaceousClient",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\yodel\\Desktop\\ft-bootcamp\\CSharp and DotNet\\CretaceousClient.Solution\\CretaceousClient\\Views\\Animals\\Details.cshtml",
+      "TargetPath": "Views\\Animals\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\yodel\\Desktop\\ft-bootcamp\\CSharp and DotNet\\CretaceousClient.Solution\\CretaceousClient\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
