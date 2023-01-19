@@ -1,3 +1,4 @@
+#nullable enable
 namespace CretaceousClient.Models;
 
 public class ErrorViewModel
