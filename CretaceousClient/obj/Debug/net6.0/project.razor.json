@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\yodel\\Desktop\\ft-bootcamp\\CSharp and DotNet\\CretaceousClient.Solution\\CretaceousClient\\Views\\Animals\\Index.cshtml",
+      "TargetPath": "Views\\Animals\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\yodel\\Desktop\\ft-bootcamp\\CSharp and DotNet\\CretaceousClient.Solution\\CretaceousClient\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

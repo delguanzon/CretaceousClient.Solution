@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\yodel\Desktop\ft-bootcamp\CSharp and DotNet\CretaceousClient.Solution\CretaceousClient
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/yodel/Desktop/ft-bootcamp/CSharp and DotNet/CretaceousClient.Solution/CretaceousClient/Views/Animals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/yodel/Desktop/ft-bootcamp/CSharp and DotNet/CretaceousClient.Solution/CretaceousClient/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
