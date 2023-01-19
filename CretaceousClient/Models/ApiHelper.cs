@@ -5,12 +5,18 @@ namespace CretaceousClient.Models
 {
     public class ApiHelper
     {
-        public static async Task<string> GetAll()
+        public static async Task<Dictionary<string, string>> GetAll()
         {
             RestClient client = new RestClient("http://localhost:5000/");
             RestRequest request = new RestRequest($"api/animals", Method.Get);
             RestResponse response = await client.GetAsync(request);
-            return response.Content;
+
+            Dictionary<string, string> responseDict = new Dictionary<string, string>();
+            //var pagination = response.Headers.Where(x => x.Name == "totalPages").Select(x => x.Value).ToString();
+            var pagination = response.Headers.ToList().Find(x => x.Name == "X-Pagination").Value.ToString();
+            responseDict.Add("pagination", pagination);
+            responseDict.Add("content", response.Content);
+            return responseDict;
         }
 
         public static async Task<string> Get(int id)
@@ -19,8 +25,9 @@ namespace CretaceousClient.Models
             RestRequest request = new RestRequest($"api/animals/{id}", Method.Get);
             RestResponse response = await client.GetAsync(request);
             return response.Content;
+            
         }
-
+        
         public static async void Post(string newAnimal)
         {
             RestClient client = new RestClient("http://localhost:5000/");

@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-
 namespace CretaceousClient.Models
 {
     public class Animal
@@ -12,15 +11,20 @@ namespace CretaceousClient.Models
         public string Species { get; set; }
         public int Age { get; set; }
 
-        public static List<Animal> GetAnimals()
+        public static AnimalPage GetAnimals()
         {
             var apiCallTask = ApiHelper.GetAll();
             var result = apiCallTask.Result;
-
-            JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
+            string content = result["pagination"];
+            //JObject jsonPagination = JsonConvert.DeserializeObject<JObject>>(content);
+            Paging pagingList = JsonConvert.DeserializeObject<Paging>(result["pagination"]);
+            
+            JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result["content"]);
             List<Animal> animalList = JsonConvert.DeserializeObject<List<Animal>>(jsonResponse.ToString());
-
-            return animalList;
+            AnimalPage ap = new AnimalPage();
+            ap.Pagings = pagingList;
+            ap.Animals = animalList;
+            return ap;
         }
 
         public static Animal GetDetails(int id)
