@@ -7,7 +7,7 @@ public class AnimalsController : Controller
 {
   public IActionResult Index()
   {
-    AnimalPage animals = Animal.GetAnimals();
+    AnimalPage animals = Animal.GetAnimals(); //AnimalPage view model was created to hold the list of animals and the paging information
     return View(animals);
   }
 

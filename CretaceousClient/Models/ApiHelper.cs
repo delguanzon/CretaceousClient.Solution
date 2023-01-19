@@ -11,11 +11,16 @@ namespace CretaceousClient.Models
             RestRequest request = new RestRequest($"api/animals", Method.Get);
             RestResponse response = await client.GetAsync(request);
 
+
+            //dictionary for passing back the pagination object from the header and the content;
             Dictionary<string, string> responseDict = new Dictionary<string, string>();
-            //var pagination = response.Headers.Where(x => x.Name == "totalPages").Select(x => x.Value).ToString();
+                        
+            //get header by name, must be exact capitalization
             var pagination = response.Headers.ToList().Find(x => x.Name == "X-Pagination").Value.ToString();
-            responseDict.Add("pagination", pagination);
-            responseDict.Add("content", response.Content);
+        
+
+            responseDict.Add("pagination", pagination); //add pagination to dictionary
+            responseDict.Add("content", response.Content);  //add content to dictionary
             return responseDict;
         }
 
