@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MhNTMJjNVOZwn3VIRAO2Er56EpZEfZmDMX7s0hyXBE9ePfRvDNEAjD+4Y7tVRsPR/YbfZpLoHCuWZf5Ubu5x8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yodel\\Desktop\\ft-bootcamp\\CSharp and DotNet\\CretaceousClient.Solution\\CretaceousClient\\CretaceousClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yodel\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\yodel\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
