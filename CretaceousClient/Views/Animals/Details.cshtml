@@ -1,5 +1,5 @@
 @{
-  ViewData["Title"] = $"Details for {Model.Name}";
+  ViewData["Title"] = $"Details for {@Model.Name}";
 }
 
 <h1>All About @Model.Name</h1>
@@ -7,4 +7,5 @@
 <p>Species: @Model.Species</p>
 <p>Age: @Model.Age</p>
 
-@Html.ActionLink("Return to all animals", "Index")
+<p>@Html.ActionLink("Edit details", "Edit", new { id = @Model.AnimalId })</p>
+<p>@Html.ActionLink("Return to all animals", "Index")</p>
